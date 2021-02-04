@@ -172,7 +172,7 @@ def restart():
     button_31.config(bg=color1),
     button_32.config(bg=color1),
     button_33.config(bg=color1),
-    sampled_changes = sample(changes,randint(3,7))
+    sampled_changes = sample(changes,randint(0,8))
     for change in sampled_changes:
         change()
     move_counter = 0
@@ -195,6 +195,11 @@ def color_check():
         a= a* but.cget("bg")=="green"
     if a==1:
         messagebox.showinfo("Victory", "Victory in " + str(move_counter) + " moves")
+        if_retry=messagebox.askquestion("Restart", "Do you want to restart the game?")
+        if if_retry=="yes":
+            restart()
+        else:
+            window.destroy()
 
 #endregion
 
