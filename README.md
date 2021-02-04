@@ -1,5 +1,7 @@
 # 3x3_puzzle
 
+Works with python 3.x, didn't test on 2.x
+
 Simple puzzle
 
 There are 9 squares in 3x3 matrix
