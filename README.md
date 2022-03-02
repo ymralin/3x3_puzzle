@@ -2,6 +2,8 @@
 
 Works with python 3.x, didn't test on 2.x
 
+Requires Tkinter
+
 Simple puzzle
 
 There are 9 squares in 3x3 matrix
